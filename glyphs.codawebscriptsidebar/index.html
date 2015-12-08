@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Sidebar Controls</title>		
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--
+		<link rel="stylesheet" href="sidebar.css" />
+		<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="sidebarRetina.css"  />	
+		-->
+		
+		<link rel="stylesheet" href="css/styles.css" />
+		<style type="text/css" media="screen">
+			
+			
+			#logobackground
+			{
+				bottom: 20pt;
+				margin: auto auto;
+				width: 200px;
+			}
+			
+			#parent
+			{
+				position:fixed;
+				bottom:0px;
+				width:100px; //width should be 100%
+				background-color:red;
+			} 
+.child {
+
+margin:0px auto; //here it will make center 
+}
+			
+		</style>
+
+	<script type="text/javascript">
+		
+		function replaceTextExample()
+		{
+			var range={length:10, location:1};
+			
+			//window.CodaTextView.replaceCharactersInRangeWithString(window.CodaTextView.currentWordRange(), 'Hello World');
+			window.CodaTextView.setSelectedRange(range);
+		}
+		
+	</script>
+	
+	</head>
+	<body>
+		<header>
+			<div class="search-control">
+				<input id="search" type="search" placeholder="Search for icon">
+			</div>
+		</header>
+		
+		<section id="icons_container">
+		</section>
+		<section id="icons_search_container">
+			<div class="icon-group">
+				<h2></h2>
+				<ul class="icon-list"></ul>
+			</div>
+		</section>
+		
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/icons.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
